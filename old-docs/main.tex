@@ -1,0 +1,62 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb,amsfonts,textcomp}
+\usepackage{color}
+\usepackage{array}
+\usepackage{hhline}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{supertabular}
+\usepackage[backend=biber,style=numeric]{biblatex}
+\addbibresource{EOSC_IQRS.bib}
+
+\title{Task Force SG3}
+\author{xxx}
+\date{\today}
+%https://www.overleaf.com/project/62387363b03e74262bbc0fdf
+\usepackage[table,xcdraw,usenames,dvipsnames]{xcolor}
+
+\usepackage{parskip} % No automatic indent at the beginning of each paragraph
+%https://www.overleaf.com/project/62387363b03e74262bbc0fdf
+\newcommand{\miguel}[1]{\textcolor{blue}{\textbf{[Miguel]} {#1}}}
+\newcommand{\dg}[1]{\textcolor{red}{\textbf{[DanielG]} {#1}}}
+\newcommand{\eli}[1]{\textcolor{teal}{\textbf{[EliR]} {#1}}}
+\newcommand{\mdavid}[1]{\textcolor{magenta}{\textbf{[MDavid]} {#1}}}
+\newcommand{\cerlane}[1]{\textcolor{brown}{\textbf{[Cerlane]} {#1}}}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Introduction}
+\input{introduction}
+
+\section{Definition of quality}
+\input{definition}
+
+\section{Landscaping}
+\input{landscaping}
+
+\section{Perspectives}
+\input{perspectives}
+
+\section{Software in production}
+\input{sw_in_prod}
+
+\section{Metadata for software}
+\input{metadata}
+
+\section{Summary and conclusions}
+\input{summary}
+
+\printbibliography
+%\bibliography{EOSC_IQRS} 
+%\bibliographystyle{ieeetr}
+
+\end{document}

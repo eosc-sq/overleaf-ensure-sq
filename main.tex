@@ -1,5 +1,6 @@
 \documentclass[a4paper]{article}
 \usepackage[utf8]{inputenc}
+\usepackage[a4paper, total={16.5cm, 22.3cm}]{geometry}
 \usepackage{url}
 \usepackage{verbatim}
 \usepackage[english]{babel}
@@ -11,20 +12,15 @@
 \usepackage{hyperref}
 \usepackage{multirow}
 \usepackage{supertabular}
+\usepackage[table,xcdraw,usenames,dvipsnames]{xcolor}
+\usepackage{parskip}
+\usepackage[backend=biber,style=numeric]{biblatex}
+\usepackage{csquotes}
+\addbibresource{EOSC_IQRS.bib}
 
-\title{Task Force SG3}
+\title{Task Force Sub Group 3 - Ensure Software Quality}
 \author{xxx}
 \date{\today}
-%https://www.overleaf.com/project/62387363b03e74262bbc0fdf
-\usepackage[table,xcdraw,usenames,dvipsnames]{xcolor}
-
-\usepackage{parskip} % No automatic indent at the beginning of each paragraph
-%https://www.overleaf.com/project/62387363b03e74262bbc0fdf
-\newcommand{\miguel}[1]{\textcolor{blue}{\textbf{[Miguel]} {#1}}}
-\newcommand{\dg}[1]{\textcolor{red}{\textbf{[DanielG]} {#1}}}
-\newcommand{\eli}[1]{\textcolor{teal}{\textbf{[EliR]} {#1}}}
-\newcommand{\mdavid}[1]{\textcolor{magenta}{\textbf{[MDavid]} {#1}}}
-\newcommand{\cerlane}[1]{\textcolor{brown}{\textbf{[Cerlane]} {#1}}}
 
 \begin{document}
 
@@ -33,28 +29,29 @@
 \tableofcontents
 
 \section{Introduction}
-\input{introduction}
-
-\section{Definition of quality}
-\input{definition}
+\input{01-introduction}
 
 \section{Landscaping}
-\input{landscaping}
+\input{02-landscaping}
+
+\section{Definition of quality}
+\input{03-definition}
+
+\section{Recommendations}
+\input{04-recommendations}
 
 \section{Perspectives}
-\input{perspectives}
+\input{05-perspectives}
 
 \section{Software in production}
-\input{sw_in_prod}
+\input{06-sw_in_prod}
 
 \section{Metadata for software}
-\input{metadata}
+\input{07-metadata}
 
 \section{Summary and conclusions}
-\input{summary}
+\input{08-summary}
 
-
-\bibliography{EOSC_IQRS} 
-\bibliographystyle{ieeetr}
+\printbibliography
 
 \end{document}
